@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../core/resources/strings_manager.dart';
 import '../../../model/category_model.dart';
-import '../widgets/categroy_item.dart';
+import '../widgets/category_item.dart';
 
 class CategoriesWidget extends StatelessWidget {
   void Function(CategoryModel) onClick;

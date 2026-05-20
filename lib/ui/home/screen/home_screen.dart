@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-
-
 import '../../../core/resources/strings_manager.dart';
 import '../../../model/category_model.dart';
-import '../../articles/screen/articles_widgets.dart';
+import '../../artices/screen/articles_widget.dart';
 import '../../categories/screen/categories_widget.dart';
 import '../widgets/home_drawer.dart';
 
