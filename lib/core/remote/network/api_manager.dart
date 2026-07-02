@@ -1,16 +1,20 @@
 import 'package:dio/dio.dart';
-import '../../../model/articles_response/Articles_response.dart';
-import '../../../model/sources_response/Sources_response.dart';
+import 'package:injectable/injectable.dart';
+
+import '../../../data/model/articles_response/Articles_response.dart';
+import '../../../data/model/sources_response/Sources_response.dart';
 import '../../resources/app_constants.dart';
 
+@singleton
 class ApiManager {
+
   static Dio dio = Dio(
     BaseOptions(
       baseUrl: "https://newsapi.org"
     )
   );
 
-  static Future<SourcesResponse> getSources(String selectedCategory)async{
+   Future<SourcesResponse> getSources(String selectedCategory)async{
     var response = await dio.get("/v2/top-headlines/sources",queryParameters: {
       "apiKey":AppConstants.apiKey,
       "category":selectedCategory
@@ -19,7 +23,7 @@ class ApiManager {
     return sourcesResponse;
   }
 
-  static Future<ArticlesResponse> getArticles(String sourceId)async{
+   Future<ArticlesResponse> getArticles(String sourceId)async{
     //?sources=bbc-sport
     var response = await dio.get("/v2/everything",queryParameters: {
       "apiKey":AppConstants.apiKey,
