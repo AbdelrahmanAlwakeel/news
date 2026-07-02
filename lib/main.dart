@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news/ui/home/screen/home_screen.dart';
 
+import 'core/di/di.dart';
 import 'core/resources/app_theme.dart';
 import 'core/resources/routes_manager.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
+    configureDependencies();
   runApp(const MyApp());
 }
 

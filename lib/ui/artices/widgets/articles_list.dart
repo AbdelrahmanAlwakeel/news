@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news/ui/artices/widgets/view_model/articles_list_view_model.dart';
+import 'package:news/core/di/di.dart';
+import 'package:news/core/remote/network/api_manager.dart';
+ import 'package:news/ui/artices/widgets/view_model/articles_list_view_model.dart';
 
 
-import '../../../model/articles_response/Article.dart';
-import '../../../model/sources_response/Source.dart';
+import '../../../data/datasource_impl/articles_api/articles_api_dao_impl.dart';
+import '../../../data/model/articles_response/Article.dart';
+import '../../../data/model/sources_response/Source.dart';
+import '../../../data/repo_impl/articles/articles_repo_impl.dart';
 import 'article_item.dart';
 
 class ArticlesList extends StatelessWidget {
@@ -15,7 +19,7 @@ class ArticlesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) => ArticlesListViewModel()..getArticles(source.id!),
+        create: (context) => getIt.get<ArticlesListViewModel>()..getArticles(source.id!),
         child: BlocBuilder<ArticlesListViewModel,ArticlesListStates>(
           builder: (context, state) {
             switch(state){

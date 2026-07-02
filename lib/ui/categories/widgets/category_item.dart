@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../core/resources/assets_manager.dart';
 import '../../../core/resources/strings_manager.dart';
-import '../../../model/category_model.dart';
+import '../../../data/model/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
   CategoryModel category;

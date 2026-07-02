@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:news/core/di/di.dart';
+import 'package:news/core/remote/network/api_manager.dart';
+import 'package:news/data/datasource_impl/sources_api/sources_api_dao_impl.dart';
+import 'package:news/data/repo_impl/sources/sources_repo_impl.dart';
 import 'package:news/ui/artices/screen/view_model/suorces_view_model.dart';
 
 import '../../../core/resources/colors_manager.dart';
-import '../../../model/category_model.dart';
-import '../../../model/sources_response/Source.dart';
+import '../../../data/model/category_model.dart';
+import '../../../data/model/sources_response/Source.dart';
 import '../widgets/articles_list.dart';
 
 class ArticlesWidget extends StatefulWidget {
@@ -21,7 +25,7 @@ class _ArticlesWidgetState extends State<ArticlesWidget> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => SourcesViewModel()..getSources(widget.selectedCategory.id),
+      create: (context) => getIt.get<SourcesViewModel>() ..getSources(widget.selectedCategory.id),
       child: BlocBuilder<SourcesViewModel, SourcesState>(
         builder: (context, state) {
           switch(state){
@@ -58,7 +62,7 @@ class _ArticlesWidgetState extends State<ArticlesWidget> {
                         tabs: sourcesList.map((source)=>Tab(
                           text:source.name ,
                         )).toList()),
-                    Expanded(child: TabBarView(children: sourcesList.map((source) => ArticlesList(source: source,),).toList()))
+                    Expanded(child: TabBarView(children: sourcesList.map((source) =>   ArticlesList(source: source,),).toList()))
                   ],
                 ),
               ),

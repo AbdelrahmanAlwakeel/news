@@ -1,0 +1,6 @@
+import 'data/model/articles_response/Articles_response.dart';
+
+abstract interface class ArticlesRepo {
+  Future<ArticlesResponse> fetchArticles(String sourceId);
+
+}
