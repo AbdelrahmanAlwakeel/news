@@ -20,7 +20,7 @@ The app allows users to browse the latest news, explore different categories, an
 |-------|-------|
  <img width="400" height="1000" alt="Screenshot_20260802_121915" src="https://github.com/user-attachments/assets/0cc89b56-2f81-48a3-b10b-574503d316c1" />
  
-<img width="500" height="10![Uploading Screenshot_20260802_121609.png…]()
+<img width="500" height="1000![Uploading Screenshot_20260802_121609.png…]()
 00" alt="Screenshot_20260802_121659" src="https://github.com/user-attachments/assets/4d31cc37-e948-4261-9333-74cd736e51bc" />
 
 ---
