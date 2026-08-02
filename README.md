@@ -14,11 +14,11 @@ The app allows users to browse the latest news, explore different categories, an
 
 ## 📸 Screenshots
 
-| Home |
+| Home |drawer |
 |------|--------|
 <img width="500" height="1000" alt="Screenshot_20260802_121555" src="https://github.com/user-attachments/assets/7ec37a2d-befd-4932-b8b1-81f3fb0e3578" />
 
-|drawer |
+
 <img width="500" height="1000" alt="Screenshot_20260802_121609" src="https://github.com/user-attachments/assets/4977b15d-ae50-48a4-a7ab-cea42c7f6ba8" />
 
 | Search | Article Details |
