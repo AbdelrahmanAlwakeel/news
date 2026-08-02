@@ -9,6 +9,8 @@ The app allows users to browse the latest news, explore different categories, an
 
 ## 🎥 Demo Video
 
+
+
 ## 📸 Screenshots
 
 | Home |drawer |
