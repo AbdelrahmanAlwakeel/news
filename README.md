@@ -14,15 +14,18 @@ The app allows users to browse the latest news, explore different categories, an
 
 ## 📸 Screenshots
 
-| Home | drawer |
+| Home |
 |------|--------|
 | ![](assets/readme/Homescreen.png) |
+
+|drawer |
 ![](assets/readme/drawer.png)  |
 
 | Search | Article Details |
 |-------|-------|
 | ![](assets/readme/search.png) | 
-![](assets/readme/Articles details.png) |
+|Article Details |
+| ![](assets/readme/articlesDetails) |
 
 ---
 
