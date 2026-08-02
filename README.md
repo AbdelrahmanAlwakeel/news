@@ -8,7 +8,10 @@ The app allows users to browse the latest news, explore different categories, an
 # 📱 Preview
 
 ## 🎥 Demo Video
-https://drive.google.com/file/d/1j6DEVS4PIPVyPozgK_yo5kUftDUqMbjm/view?usp=drive_link
+
+
+https://github.com/user-attachments/assets/67481f15-3c08-4fa2-85be-1a66dd6e4b38
+
 
 
 ## 📸 Screenshots
