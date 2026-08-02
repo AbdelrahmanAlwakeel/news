@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news/ui/home/screen/home_screen.dart';
 
 import 'core/di/di.dart';
 import 'core/resources/app_theme.dart';
 import 'core/resources/routes_manager.dart';
+import 'features/home/presentation/screen/home_screen.dart';
+import 'features/search/presentation/cubit/search_cubit.dart';
+import 'features/search/presentation/screen/search_screen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +32,10 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: AppTheme.lightTheme,
           routes: {
-            RoutesManager.homeRouteName:(_)=>HomeScreen()
+            RoutesManager.homeRouteName:(_)=>HomeScreen(),
+            RoutesManager.searchRouteName:(context)=>BlocProvider(
+              create: (context) => SearchCubit(),
+                child: SearchScreen()),
           },
           initialRoute: RoutesManager.homeRouteName,
         );

@@ -45,6 +45,7 @@ dependencies:
   # add get_it
   get_it:
   url_launcher: ^6.3.2
+  flutter_native_splash: ^2.4.7
 
 dev_dependencies:
 
