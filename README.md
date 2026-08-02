@@ -23,6 +23,9 @@ The app allows users to browse the latest news, explore different categories, an
 
 | Search | Article Details |
 |-------|-------|
+<p align="center">
+  <img scr="assets/readme/search.png"> width="200"/>
+</p>
 | ![](assets/readme/search.png) | 
 |Article Details |
 <img width="1080" height="2400" alt="Screenshot_20260802_121659" src="https://github.com/user-attachments/assets/4d31cc37-e948-4261-9333-74cd736e51bc" />
